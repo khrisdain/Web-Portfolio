@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
-import { useTheme } from './ThemeProvider';
+import { useTheme } from '../context/ThemeProvider';
 
 export default function AnimatedBackground() {
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });

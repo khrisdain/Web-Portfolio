@@ -18,7 +18,7 @@
   }
 
   p {
-    @apply text-dark/90 dark:text-secondary-100;
+    @apply text-dark dark:text-secondary-100;
   }
   
   a {
@@ -36,15 +36,24 @@
   }
   
   .btn-primary {
-    @apply bg-dark text-white dark:bg-primary-400 dark:text-dark hover:bg-primary-700 dark:hover:bg-primary-300 shadow-3d dark:shadow-3d-white transform hover:-translate-y-1 hover:translate-x-1;
+    @apply bg-primary-100 text-dark dark:bg-secondary-800 dark:text-white 
+           hover:bg-primary-200 dark:hover:bg-secondary-700 
+           border border-primary-300 dark:border-secondary-700
+           shadow-neumorphic dark:shadow-neumorphic-dark;
   }
   
   .btn-secondary {
-    @apply bg-primary-200 text-dark dark:bg-secondary-800 dark:text-secondary-100 hover:bg-primary-300 dark:hover:bg-secondary-700 shadow-3d dark:shadow-3d-white transform hover:-translate-y-1 hover:translate-x-1;
+    @apply bg-primary-100 text-dark dark:bg-secondary-800 dark:text-white
+           hover:bg-primary-200 dark:hover:bg-secondary-700
+           border border-primary-300 dark:border-secondary-700
+           shadow-neumorphic dark:shadow-neumorphic-dark;
   }
   
   .btn-outline {
-    @apply border-2 border-dark text-dark dark:border-primary-400 dark:text-primary-400 hover:bg-dark hover:text-white dark:hover:bg-primary-400 dark:hover:text-dark;
+    @apply bg-primary-100 text-dark dark:bg-secondary-800 dark:text-white
+           border border-primary-300 dark:border-secondary-700
+           hover:bg-primary-200 dark:hover:bg-secondary-700
+           shadow-neumorphic dark:shadow-neumorphic-dark;
   }
   
   .section {
@@ -52,10 +61,14 @@
   }
   
   .section-title {
-    @apply text-3xl md:text-4xl font-bold mb-12 text-center;
+    @apply text-3xl md:text-4xl font-bold mb-12 text-center text-dark dark:text-white;
   }
   
   .card {
-    @apply bg-primary-100 dark:bg-secondary-800 rounded-xl p-6 border border-dark/10 dark:border-white/10 shadow-3d dark:shadow-3d-white hover:shadow-3d-lg dark:hover:shadow-3d-white-lg transform hover:-translate-y-1 hover:translate-x-1 transition-all duration-300;
+    @apply bg-primary-100 dark:bg-secondary-800 rounded-xl p-6 
+           border border-primary-300 dark:border-secondary-700
+           shadow-neumorphic dark:shadow-neumorphic-dark 
+           hover:shadow-neumorphic-pressed dark:hover:shadow-neumorphic-dark-pressed 
+           transition-all duration-300;
   }
 } 

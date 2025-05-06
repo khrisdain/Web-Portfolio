@@ -5,7 +5,7 @@ import '../styles/globals.css';
 import AnimatedBackground from '../components/AnimatedBackground';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { ThemeProvider } from '../components/ThemeProvider';
+import ThemeProvider from '../context/ThemeProvider';
 
 export default function RootLayout({ children }) {
   const [mounted, setMounted] = useState(false);

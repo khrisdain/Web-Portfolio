@@ -2,7 +2,7 @@
 
 import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
-import { Canvas } from '@react-three/fiber';
+import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 
 const projectsData = [
@@ -125,10 +125,17 @@ function ProjectCard({ project }) {
 
 // Simple 3D model for category selection
 function Model3D() {
+  const meshRef = useRef();
+  
+  useFrame((state, delta) => {
+    meshRef.current.rotation.x += delta * 0.2;
+    meshRef.current.rotation.y += delta * 0.3;
+  });
+  
   return (
-    <mesh>
-      <torusKnotGeometry args={[1, 0.3, 100, 16]} />
-      <meshStandardMaterial color="#0ea5e9" metalness={0.6} roughness={0.2} />
+    <mesh ref={meshRef}>
+      <boxGeometry args={[1.5, 1.5, 1.5]} />
+      <meshStandardMaterial color="#000000" metalness={0.5} roughness={0.3} />
     </mesh>
   );
 }
