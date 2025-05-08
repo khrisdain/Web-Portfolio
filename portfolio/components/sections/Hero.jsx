@@ -30,7 +30,7 @@ export default function Hero() {
         {/* Text Content */}
         <div className="z-10">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-            <span className="block text-primary-400">Web</span>
+            <span className="block text-primary-400">Software</span>
             <span className="text-dark dark:text-white">Developer</span>
           </h1>
           <p className="text-xl md:text-2xl text-dark dark:text-secondary-300 mb-8">

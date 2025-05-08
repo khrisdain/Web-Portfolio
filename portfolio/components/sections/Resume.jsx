@@ -6,11 +6,11 @@ import { useState, useRef, useEffect } from 'react';
 const experiences = [
   {
     id: 1,
-    title: 'Senior Frontend Developer',
-    company: 'TechCorp Inc.',
-    location: 'San Francisco, CA',
+    title: 'Software Engineer(Mid-level)',
+    company: 'Brainswood Integrated.',
+    location: 'Lagos, Nigeria',
     period: '2020 - Present',
-    description: 'Led the frontend development team in creating responsive and interactive web applications. Implemented modern UI/UX designs using React, Next.js, and Three.js. Optimized application performance and mentored junior developers.',
+    description: 'Led the development team in creating responsive and interactive web applications. Implemented modern UI/UX designs using React, Next.js, and Three.js. Optimized application performance and mentored junior developers.',
     achievements: [
       'Reduced page load time by 40% through code optimization and lazy loading techniques',
       'Implemented 3D interactive product visualization that increased user engagement by 25%',
@@ -20,21 +20,21 @@ const experiences = [
   {
     id: 2,
     title: 'Web Developer',
-    company: 'Digital Solutions LLC',
-    location: 'Austin, TX',
+    company: 'Greay-Area',
+    location: 'Lagos, Nigeria',
     period: '2018 - 2020',
     description: 'Developed and maintained multiple client websites and web applications. Collaborated with designers to implement responsive designs and ensure cross-browser compatibility.',
     achievements: [
-      'Built custom e-commerce solutions for 5+ clients using React and Node.js',
+      'Built custom e-commerce solutions for 3+ clients using React and Node.js',
       'Implemented CI/CD pipelines that reduced deployment time by 70%',
       'Created reusable component library that increased development efficiency by 30%',
     ],
   },
   {
     id: 3,
-    title: 'Junior Frontend Developer',
-    company: 'StartUp Innovations',
-    location: 'Seattle, WA',
+    title: 'Junior Software Developer',
+    company: 'University of Lagos, Nithub',
+    location: 'Lagos, Nigeria',
     period: '2016 - 2018',
     description: 'Assisted in developing frontend solutions for web applications. Worked on implementing UI designs and fixing bugs in existing codebases.',
     achievements: [
@@ -48,26 +48,26 @@ const experiences = [
 const education = [
   {
     id: 1,
-    degree: 'Master of Science in Computer Science',
-    institution: 'University of Washington',
-    location: 'Seattle, WA',
-    period: '2014 - 2016',
+    degree: 'Diploma in Computer Programming and Analysis',
+    institution: 'Humber College',
+    location: 'Etobiocke, ON',
+    period: '2025-present',
     achievements: [
-      'Specialization in Human-Computer Interaction',
+      'Major in Algorithmic Thinking, Object-Oriented Programming, Database, Web Development, and Software Development',
       'GPA: 3.8/4.0',
-      'Research: "Interactive Data Visualization in Web Applications"',
+      'Dean\'s List for 2 consecutive semesters',
     ],
   },
   {
     id: 2,
-    degree: 'Bachelor of Science in Web Development',
-    institution: 'California State University',
-    location: 'Los Angeles, CA',
-    period: '2010 - 2014',
+    degree: 'Bachelor of Science in Chemical Engineering',
+    institution: 'University of Lagos',
+    location: 'Lagos, Nigeria',
+    period: '2016-2022',
     achievements: [
-      'Major in Web Development, Minor in Graphic Design',
-      'GPA: 3.6/4.0',
-      'Dean\'s List for 6 consecutive semesters',
+      'Specialization in Process Optimizaion, Material and Energy Balance',
+      'GPA: 4.5/5.0',
+      'Research: "Production of Polyurethane using Alternative reacting agent"',
     ],
   },
 ];
@@ -82,7 +82,7 @@ const certifications = [
   {
     id: 2,
     name: 'React Advanced Concepts',
-    issuer: 'Meta',
+    issuer: 'Udemy',
     date: '2021',
   },
   {
@@ -137,34 +137,34 @@ function TimelineItem({ data, type = 'experience' }) {
         }`}
       >
         {/* Timeline line */}
-        <div className="absolute left-0 top-0 h-full w-px bg-secondary-700"></div>
+        <div className="absolute left-0 top-0 h-full w-px bg-secondary-700/30"></div>
         
         {/* Timeline dot */}
-        <div className="absolute left-[-8px] top-2 h-4 w-4 rounded-full bg-primary-500 shadow-lg shadow-primary-500/20"></div>
+        <div className="absolute left-[-8px] top-2 h-4 w-4 rounded-full bg-primary-500/80 shadow-lg shadow-primary-500/10"></div>
         
         {/* Content */}
         <div className="card hover:shadow-primary-500/5">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-            <h3 className="text-xl font-bold text-white">{data.title}</h3>
-            <div className="text-sm font-medium px-3 py-1 bg-secondary-700 rounded-full text-primary-400 mt-2 md:mt-0 inline-block">
+            <h3 className="text-xl font-bold text-black">{data.title}</h3>
+            <div className="text-sm font-medium px-3 py-1 bg-secondary-700/30 rounded-full text-primary-400 mt-2 md:mt-0 inline-block">
               {data.period}
             </div>
           </div>
           
           <div className="mb-4">
             <div className="text-primary-300 flex items-center">
-              <span className="font-medium">{data.company}</span>
-              <span className="mx-2">•</span>
-              <span className="text-secondary-400">{data.location}</span>
+              <span className="font-medium text-black">{data.company}</span>
+              <span className="mx-2 text-black">•</span>
+              <span className="text-black">{data.location}</span>
             </div>
           </div>
           
-          <p className="text-secondary-300 mb-4">{data.description}</p>
+          <p className="text-black mb-4">{data.description}</p>
           
           {data.achievements && (
             <div className="mt-4">
-              <h4 className="text-white font-semibold text-sm mb-2">Key Achievements:</h4>
-              <ul className="list-disc pl-5 space-y-1 text-secondary-300">
+              <h4 className="text-black font-semibold text-sm mb-2">Key Achievements:</h4>
+              <ul className="list-disc pl-5 space-y-1 text-black">
                 {data.achievements.map((achievement, index) => (
                   <li key={index} className="text-sm">{achievement}</li>
                 ))}
@@ -183,31 +183,31 @@ function TimelineItem({ data, type = 'experience' }) {
         }`}
       >
         {/* Timeline line */}
-        <div className="absolute left-0 top-0 h-full w-px bg-secondary-700"></div>
+        <div className="absolute left-0 top-0 h-full w-px bg-secondary-700/30"></div>
         
         {/* Timeline dot */}
-        <div className="absolute left-[-8px] top-2 h-4 w-4 rounded-full bg-primary-500 shadow-lg shadow-primary-500/20"></div>
+        <div className="absolute left-[-8px] top-2 h-4 w-4 rounded-full bg-primary-500/80 shadow-lg shadow-primary-500/10"></div>
         
         {/* Content */}
         <div className="card hover:shadow-primary-500/5">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-            <h3 className="text-xl font-bold text-white">{data.degree}</h3>
-            <div className="text-sm font-medium px-3 py-1 bg-secondary-700 rounded-full text-primary-400 mt-2 md:mt-0 inline-block">
+            <h3 className="text-xl font-bold text-black">{data.degree}</h3>
+            <div className="text-sm font-medium px-3 py-1 bg-secondary-700/30 rounded-full text-primary-400 mt-2 md:mt-0 inline-block">
               {data.period}
             </div>
           </div>
           
           <div className="mb-4">
             <div className="text-primary-300 flex items-center">
-              <span className="font-medium">{data.institution}</span>
-              <span className="mx-2">•</span>
-              <span className="text-secondary-400">{data.location}</span>
+              <span className="font-medium text-black">{data.institution}</span>
+              <span className="mx-2 text-black">•</span>
+              <span className="text-black">{data.location}</span>
             </div>
           </div>
           
           {data.achievements && (
             <div className="mt-4">
-              <ul className="list-disc pl-5 space-y-1 text-secondary-300">
+              <ul className="list-disc pl-5 space-y-1 text-black">
                 {data.achievements.map((achievement, index) => (
                   <li key={index} className="text-sm">{achievement}</li>
                 ))}
@@ -259,10 +259,10 @@ function CertificationCard({ certification }) {
     >
       <div className="flex items-start justify-between">
         <div>
-          <h3 className="text-lg font-bold text-white mb-1">{certification.name}</h3>
-          <p className="text-primary-300 text-sm">{certification.issuer}</p>
+          <h3 className="text-lg font-bold text-black mb-1">{certification.name}</h3>
+          <p className="text-black text-sm">{certification.issuer}</p>
         </div>
-        <span className="text-sm bg-secondary-700 px-3 py-1 rounded-full text-primary-400">
+        <span className="text-sm bg-secondary-700/30 px-3 py-1 rounded-full text-primary-400">
           {certification.date}
         </span>
       </div>
@@ -274,21 +274,21 @@ export default function Resume() {
   const [activeTab, setActiveTab] = useState('experience');
   
   return (
-    <section id="resume" className="section bg-secondary-800/50">
+    <section id="resume" className="section bg-secondary-800/20">
       <div className="container">
-        <h2 className="section-title">Resume & Experience</h2>
+        <h2 className="section-title text-black">Resume & Experience</h2>
         
         {/* Tabs */}
         <div className="flex justify-center mb-12">
-          <div className="bg-secondary-800 rounded-full p-1 flex">
+          <div className="bg-secondary-800/30 rounded-full p-1 flex">
             {['experience', 'education', 'certifications'].map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
                 className={`px-6 py-2 rounded-full transition-all ${
                   activeTab === tab
-                    ? 'bg-primary-500 text-white'
-                    : 'text-secondary-300 hover:text-white'
+                    ? 'bg-primary-500/80 text-white'
+                    : 'text-black hover:text-primary-400'
                 }`}
               >
                 {tab.charAt(0).toUpperCase() + tab.slice(1)}

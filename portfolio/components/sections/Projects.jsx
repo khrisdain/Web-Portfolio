@@ -100,21 +100,21 @@ function ProjectCard({ project }) {
       
       {/* Project Info */}
       <div className="flex flex-col h-full">
-        <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
-        <p className="text-secondary-300 text-sm mb-4 flex-grow">{project.description}</p>
+        <h3 className="text-xl font-bold text-black mb-2">{project.title}</h3>
+        <p className="text-black text-sm mb-4 flex-grow">{project.description}</p>
         
         <div className="mt-auto space-y-4">
           {/* Technologies */}
           <div className="flex flex-wrap gap-2">
             {project.tags.map((tag) => (
-              <span key={tag} className="bg-secondary-700 text-primary-300 px-2 py-1 rounded text-xs">
+              <span key={tag} className="bg-secondary-700 text-black px-2 py-1 rounded text-xs">
                 {tag}
               </span>
             ))}
           </div>
           
           {/* Role */}
-          <div className="text-sm text-secondary-400">
+          <div className="text-sm text-black">
             <span className="text-primary-400 font-medium">Role:</span> {project.role}
           </div>
         </div>
@@ -159,7 +159,7 @@ export default function Projects() {
   return (
     <section id="projects" className="section">
       <div className="container">
-        <h2 className="section-title">My Projects</h2>
+        <h2 className="section-title text-black">My Projects</h2>
         
         {/* 3D Category Selection */}
         <div className="mb-12">
@@ -180,7 +180,7 @@ export default function Projects() {
                 className={`px-4 py-2 rounded-full transition-all ${
                   activeCategory === category.id
                     ? 'bg-primary-500 text-white shadow-lg'
-                    : 'bg-secondary-700 text-secondary-300 hover:bg-secondary-600'
+                    : 'bg-secondary-700 text-black hover:bg-secondary-600'
                 }`}
               >
                 {category.name}
@@ -198,7 +198,7 @@ export default function Projects() {
         
         {/* Call to Action */}
         <div className="mt-12 text-center">
-          <p className="text-secondary-300 mb-6">Want to see more of my work?</p>
+          <p className="text-black mb-6">Want to see more of my work?</p>
           <a 
             href="https://github.com" 
             target="_blank" 

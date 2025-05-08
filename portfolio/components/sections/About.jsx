@@ -94,7 +94,7 @@ export default function About() {
           
           {/* Content */}
           <div className="space-y-6">
-            <h3 className="text-2xl font-bold text-white mb-4">Web Developer <span className="text-primary-400">& Designer</span></h3>
+            <h3 className="text-2xl font-bold text-white mb-4">Software Engineer<span className="text-primary-400">& Designer</span></h3>
             
             <p className="text-secondary-300">
               I'm a passionate web developer with expertise in creating visually stunning and highly functional websites and applications. With over 5 years of experience in the industry, I've worked with clients from startups to large corporations.

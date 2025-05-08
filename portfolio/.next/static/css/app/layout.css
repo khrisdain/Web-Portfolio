@@ -1136,6 +1136,18 @@ a{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-secondary-700\/30{
+  background-color: rgb(51 65 85 / 0.3);
+}
+.bg-secondary-800\/20{
+  background-color: rgb(30 41 59 / 0.2);
+}
+.bg-secondary-800\/30{
+  background-color: rgb(30 41 59 / 0.3);
+}
+.bg-secondary-900\/20{
+  background-color: rgb(15 23 42 / 0.2);
+}
 .bg-gradient-to-br{
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
@@ -1333,6 +1345,10 @@ a{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+.text-black{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
 .opacity-0{
   opacity: 0;
 }
@@ -1360,6 +1376,10 @@ a{
 }
 .shadow-primary-500\/20{
   --tw-shadow-color: rgb(29 78 216 / 0.2);
+  --tw-shadow: var(--tw-shadow-colored);
+}
+.shadow-primary-500\/10{
+  --tw-shadow-color: rgb(29 78 216 / 0.1);
   --tw-shadow: var(--tw-shadow-colored);
 }
 .filter{
