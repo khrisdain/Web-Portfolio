@@ -70,30 +70,23 @@ export default function About() {
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Image */}
-          <div className="relative overflow-hidden rounded-xl">
-            <div className="aspect-w-4 aspect-h-5 bg-secondary-700 rounded-xl overflow-hidden relative">
-              {/* Replace with your actual image */}
-              <div className="absolute inset-0 flex items-center justify-center text-secondary-500">
-                {/* Placeholder for profile image */}
-                <div className="relative w-full h-full">
-                  <div className="absolute inset-0 bg-gradient-to-tr from-primary-500/20 to-transparent"></div>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-20 w-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            {/* Experience badge */}
-            <div className="absolute top-6 -right-6 bg-primary-500 text-white px-8 py-2 shadow-lg transform rotate-45">
-              <span className="font-semibold">5+ Years</span>
+          <div className="relative flex-shrink-0 flex justify-center">
+            <div className="w-[300px] h-[300px] rounded-full overflow-hidden relative border-4 border-primary-500/20">
+              <Image
+                src="/images/image.png"
+                alt="Profile picture"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 300px"
+                priority
+                style={{ objectFit: 'cover' }}
+              />
+              <div className="absolute inset-0 bg-gradient-to-tr from-primary-500/20 to-transparent"></div>
             </div>
           </div>
           
           {/* Content */}
-          <div className="space-y-6">
+          <div className="space-y-6 flex-grow">
             <h3 className="text-2xl font-bold text-white mb-4">Software Engineer<span className="text-primary-400">& Designer</span></h3>
             
             <p className="text-secondary-300">

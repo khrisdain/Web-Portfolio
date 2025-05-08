@@ -882,6 +882,15 @@ a{
 .h-full{
   height: 100%;
 }
+.h-auto{
+  height: auto;
+}
+.h-\[500px\]{
+  height: 500px;
+}
+.h-\[300px\]{
+  height: 300px;
+}
 .max-h-0{
   max-height: 0px;
 }
@@ -914,6 +923,9 @@ a{
 }
 .w-px{
   width: 1px;
+}
+.w-\[300px\]{
+  width: 300px;
 }
 .max-w-md{
   max-width: 28rem;
@@ -1089,6 +1101,9 @@ a{
 .border{
   border-width: 1px;
 }
+.border-4{
+  border-width: 4px;
+}
 .border-red-500{
   --tw-border-opacity: 1;
   border-color: rgb(239 68 68 / var(--tw-border-opacity));
@@ -1096,6 +1111,9 @@ a{
 .border-secondary-700{
   --tw-border-opacity: 1;
   border-color: rgb(51 65 85 / var(--tw-border-opacity));
+}
+.border-primary-500\/20{
+  border-color: rgb(29 78 216 / 0.2);
 }
 .bg-green-900\/30{
   background-color: rgb(20 83 45 / 0.3);
@@ -1189,6 +1207,10 @@ a{
 .to-transparent{
   --tw-gradient-to: transparent var(--tw-gradient-to-position);
   --tw-gradient-to-position:  ;
+}
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .p-1{
   padding: 0.25rem;
