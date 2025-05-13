@@ -66,7 +66,6 @@ const education = [
     period: '2016-2022',
     achievements: [
       'Specialization in Process Optimizaion, Material and Energy Balance',
-      'GPA: 4.5/5.0',
       'Research: "Production of Polyurethane using Alternative reacting agent"',
     ],
   },
