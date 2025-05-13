@@ -61,6 +61,8 @@ export default function AnimatedBackground() {
       });
     }
 
+    let animationFrameId;
+
     // Animation function
     function animate() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -117,10 +119,18 @@ export default function AnimatedBackground() {
         });
       });
       
-      requestAnimationFrame(animate);
+      animationFrameId = requestAnimationFrame(animate);
     }
     
-    animate();
+    // Start animation immediately
+    animationFrameId = requestAnimationFrame(animate);
+
+    // Cleanup function
+    return () => {
+      if (animationFrameId) {
+        cancelAnimationFrame(animationFrameId);
+      }
+    };
   }, [dimensions, isDark]);
 
   return (

@@ -55,7 +55,7 @@ const education = [
     achievements: [
       'Major in Algorithmic Thinking, Object-Oriented Programming, Database, Web Development, and Software Development',
       'GPA: 3.8/4.0',
-      'Dean\'s List for 2 consecutive semesters',
+      'Dean\'s List',
     ],
   },
   {
